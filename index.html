@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <head>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
+          color: #333;
+          margin: 0;
+          padding: 20px;
+      }
+      .paper {
+          margin-bottom: 20px;
+          background-color: #f9f9f9; /* 浅灰色背景 */
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .paper h2 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #5c6bc0; /* 柔和的蓝紫色 */
+      }
+      .paper p {
+          font-size: 16px;
+          line-height: 1.5;
+          color: #666; /* 柔和的灰色 */
+      }
+      .paper a {
+          color: #5c6bc0; /* 柔和的蓝紫色 */
+          text-decoration: none;
+          transition: color 0.3s ease;
+      }
+      .paper a:hover {
+          color: #3949ab; /* 柔和的深蓝色 */
+          text-decoration: underline;
+      }
+  </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Endora: Video Generation Models as Endoscopy Simulators
+    </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+    <script src="js/google-code-prettify/prettify.js"></script> -->
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            
+            <h2><img src="./pic/avatar_2.png" alt="" width="80" height="80">
+              <i>Endora</i>:
+              Video Generation Models as
+              Endoscopy Simulators <br>
+            </h2>
+            <h4 style="color:#5a6268;">Arxiv 2024 </h4>
+            <hr>
+            <h6>
+                <a href="https://xggnet.github.io/" target="_blank">Chenxin Li</a><sup>1*</sup>,
+                <a href="https://github.com/LiuHengyu321" target="_blank">Hengyu Liu</a><sup>1*</sup>,
+                <a href="https://yifliu3.github.io/" target="_blank">Yifan Liu</a><sup>1*</sup>,
+                <a href="https://brandonyfeng.github.io/" target="_blank">Brandon Y. Feng</a><sup>2</sup>,
+                <br>
+                <a href="https://wymancv.github.io/wuyang.github.io/" target="_blank">Wuyang Li</a><sup>1</sup>,
+                <a href="https://xinyuliu-jeffrey.github.io/" target="_blank">Xinyu Liu</a><sup>1</sup>,
+                <a href="https://franciszchen.github.io/" target="_blank">Zhen Chen</a><sup>3</sup>
+                <a href="https://scholar.google.com.hk/citations?user=VU5ObUwAAAAJ&hl=zh-CN" target="_blank">Jing Shao</a><sup>4</sup>
+                <a href="http://www.ee.cuhk.edu.hk/~yxyuan/people/people.htm" target="_blank">Yixuan Yuan</a><sup>1</sup>
+              </h6>
+            <p>
+                <sup>1</sup>The Chinese University of Hong Kong &nbsp;&nbsp;
+                <sup>2</sup>Massachusetts Institute of Technology&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>
+                <sup>3</sup>Centre for Artificial Intelligence and Robotics of Hong Kong &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>4</sup>Shanghai Artificial Intelligence Laboratory
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="TBD" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/XGGNet/Endora" role="button"  target="_blank">
+                    <i class="fa fa-github-alt"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://stuxmueducn-my.sharepoint.com/:f:/g/personal/chenxinli_stu_xmu_edu_cn/EpOyWbfW6PBKqMaZwHAKnaYBJvDRAnqd4L1974eR5KC1LQ?e=uWc73k" role="button"  target="_blank">
+                    <i class="fa fa-database"></i> Model </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="
+                    https://youtu.be/_cBm336K2Tk" role="button"  target="_blank">
+                    <i class="fa fa-desktop"></i> Video </a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+            <h6 style="color:#8899a5"> 
+              <!-- SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss.  -->
+              TL;DR:<i>Endora</i> enables the <b>high-fidelity medical video generation</b> on endoscopy scenes and demonstrates the <b>versatile ability through successful applications</b> in video-based disease diagnosis and 3D surgical scene reconstruction.
+            </h6>
+
+              <!-- <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                  <source src="video/teaser.mp4" type="video/mp4">
+              </video> -->
+
+			        <br>
+
+          <p class="text-left">
+            <!-- In this paper, we present a novel diffusion model called SyncDreamer that generates multiview-consistent images from a single-view image. Using pretrained large-scale 2D diffusion models, recent work Zero123 demonstrates the ability to generate plausible novel views from a single-view image of an object. However, maintaining consistency in geometry and colors for the generated images remains a challenge. To address this issue, we propose a synchronized multiview diffusion model that models the joint probability distribution of multiview images, enabling the generation of multiview-consistent images in a single reverse process. SyncDreamer synchronizes the intermediate states of all the generated images at every step of the reverse process through a 3D-aware feature attention mechanism that correlates the corresponding features across different views. Experiments show that SyncDreamer generates images with high consistency across different views, thus making it well-suited for various 3D generation tasks such as novel-view-synthesis, text-to-3D, and image-to-3D. -->
+            Generative models hold promise for revolutionizing medical education, robot-assisted surgery, and data augmentation for machine learning. 
+            Despite progress in generating 2D medical images, the complex domain of clinical video generation has largely remained untapped.
+            <br>
+            <br>
+            This paper introduces <i>Endora</i>, an innovative approach to generate medical videos to simulate clinical endoscopy scenes.
+            We present a novel generative model design that integrates a meticulously crafted spatial-temporal video transformer with advanced 2D vision foundation model priors, explicitly modeling spatial-temporal dynamics during video generation. 
+            <br>
+            <br>
+            We also pioneer the first public benchmark for endoscopy simulation with video generation models, adapting existing state-of-the-art methods for this endeavor.
+            <i>Endora</i> demonstrates exceptional visual quality in generating endoscopy videos, surpassing state-of-the-art methods in extensive testing.
+            Moreover, we explore how this endoscopy simulator can empower downstream video analysis tasks and even generate 3D medical scenes with multi-view consistency. 
+            <br>
+            <br>
+            In a nutshell, <i>Endora</i> marks a notable breakthrough in the deployment of generative AI for clinical endoscopy research, setting a substantial stage for further advances in medical content generation.
+          </p>
+
+          
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_cBm336K2Tk?si=cIFzOR85C9jmPN1m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+        <p class="text-center">
+          <!-- Reverse process of SyncDreamer's multiview diffusion. -->
+          <!-- Sampled realistic endoscopy videos by <i>Endora</i>.  -->
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>Results on Colonoscopic Dataset</h2>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/result_1.mp4" type="video/mp4">
+            </video>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>Results on Kvasir-Capsule Dataset</h2>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/result_2.mp4" type="video/mp4">
+            </video>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>Results on CholecTriplet Dataset</h2>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="video/result_3.mp4" type="video/mp4">
+          </video>
+    </div>
+  </div>
+</section>
+<br>
+
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2><i>Endora</i> as Efficient 3D Creators (<i>shown by rendered RGB&depth maps</i>) </h2>
+            <hr style="margin-top:0px">
+            <div style="width: 100%; height: 8px;"></div>
+              <!-- <div class="video-container" style="display: flex; flex-direction: row; align-items: center;"> -->
+                <div class="video-container" style="display: flex; justify-content: center;">
+                  <div style="display: flex; align-items: center; width: 160; height:120;">
+                    <!-- <span> StyleGAN </span> -->
+                  </div>
+                  <video class="video" width="160" height="120" autoplay="autoplay" loop="loop" preload="" muted="">
+                      <source src="video/recon2/1_rgb.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <video class="video" width="160" height="120" autoplay="autoplay" loop="loop" preload="" muted="">
+                      <source src="video/recon2/1_depth.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <video class="video" width="160" height="120" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="video/recon2/2_rgb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="video" width="160" height="120" autoplay="autoplay" loop="loop" preload="" muted="">
+                    <source src="video/recon2/2_depth.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+          <p class="text-center">
+           <br>
+            We train a Gaussian Splatting representationon on the sampled videos by <i>Endora</i> 
+            and observe the <b>multi-view consistent geometry </b> as if in the real 3D world.
+            <!-- single-view image, SynDreame allows generating different instances using different random seeds. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+<!--   
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>More results</h2>
+            <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/more_results.mp4" type="video/mp4">
+            </video>
+
+          <p class="text-center">
+              Test images are downloaded from the Internet and some of them are from <a href="https://wiki.biligame.com/ys/%E9%A6%96%E9%A1%B5" target="_blank">Genshin Impact Wiki</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> -->
+
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+                <code>
+                  @article{li2024endora,
+                    author    = {Chenxin Li and Hengyu Liu and Yifan Liu and Brandon Y. Feng, and Wuyang Li and Xinyu Liu, Zhen Chen and Jing shao and Yixuan Yuan},
+                    title     = {Endora: Video Generation Models as Endoscopy Simulators},
+                    journal   = {Arxiv},
+                    year      = {2024},
+                  }
+
+                </code>
+              </pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Relevant Works</h3>
+          
+          <hr style="margin-top:0px">
+          <div class="paper">
+              <h2><a>EndoGaussian: Real-time Gaussian Splatting for Dynamic Endoscopic Scene Reconstruction</a></h2>
+              <p>A real-time endoscopic scene reconstruction framework built on 3D Gaussian Splatting (3DGS)</p>
+              <p><a href="https://github.com/yifliu3/EndoGaussian">[Code]</a> | <a href="https://arxiv.org/pdf/2401.12561.pdf">[Paper]</a> | <a href="https://yifliu3.github.io/EndoGaussian/">[Page]</a></p>
+          </div>
+          
+          <hr>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
