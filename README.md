@@ -7,9 +7,9 @@
 ## 🎥 Some Demo
 | Endoscopy | Ultrasound | RT-MRI | Cell |
 | --------- | ---------- | ------ | ---- |
-| <video src="examples/endo/sample_0.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_1.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_1.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_0.mp4" controls="controls" width=""></video> |
-| <video src="examples/endo/sample_4.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_6.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_2.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_4.mp4" controls="controls" width=""></video> |
-| <video src="examples/endo/sample_6.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_8.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_3.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_7.mp4" controls="controls" width=""></video> |
+| <img src="examples/endo/sample_0.gif" width=""> | <img src="example/uls/sample_1.gif" width=""> | <img src="example/mri/sample_1.gif" width=""> | <img src="example/cell/sample_0.gif" width=""> |
+| <img src="examples/endo/sample_4.gif" width=""> | <img src="example/uls/sample_6.gif" width=""> | <img src="example/mri/sample_2.gif" width=""> | <img src="example/cell/sample_4.gif" width=""> |
+| <img src="examples/endo/sample_6.gif" width=""> | <img src="example/uls/sample_8.gif" width=""> | <img src="example/mri/sample_3.gif" width=""> | <img src="example/cell/sample_7.gif" width=""> |
 
 
 ## Star History
