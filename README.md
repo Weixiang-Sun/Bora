@@ -5,10 +5,12 @@
 - **[2024.6.19]** We release **Bora**, a video generation model specificaly for biomedical domain.
 
 ## 🎥 Some Demo
-| Endoscopy   | <video src="examples/endo/sample_0.mp4" controls="controls" width=""></video> | <video src="examples/endo/sample_4.mp4" controls="controls" width=""></video> | <video src="examples/endo/sample_6.mp4" controls="controls" width=""></video> |
-| Ultrasound   | <video src="example/uls/sample_1.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_6.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_8.mp4" controls="controls" width=""></video> |
-| RT-MRI   | <video src="example/mri/sample_1.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_2.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_3.mp4" controls="controls" width=""></video> |
-| Cell   | <video src="example/cell/sample_0.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_4.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_7.mp4" controls="controls" width=""></video> |
+| Endoscopy | Ultrasound | RT-MRI | Cell |
+| --------- | ---------- | ------ | ---- |
+| <video src="examples/endo/sample_0.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_1.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_1.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_0.mp4" controls="controls" width=""></video> |
+| <video src="examples/endo/sample_4.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_6.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_2.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_4.mp4" controls="controls" width=""></video> |
+| <video src="examples/endo/sample_6.mp4" controls="controls" width=""></video> | <video src="example/uls/sample_8.mp4" controls="controls" width=""></video> | <video src="example/mri/sample_3.mp4" controls="controls" width=""></video> | <video src="example/cell/sample_7.mp4" controls="controls" width=""></video> |
+
 
 ## Star History
 
