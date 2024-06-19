@@ -6,7 +6,7 @@
 
 ## 🎥 Some Demo
 | Endoscopy | Ultrasound | RT-MRI | Cell |
-| --------- | ---------- | ------ | ---- |
+| ------ | ------ | ------ | ------ |
 | <img src="examples/endo/sample_0.gif" width=""> | <img src="example/uls/sample_1.gif" width=""> | <img src="example/mri/sample_1.gif" width=""> | <img src="example/cell/sample_0.gif" width=""> |
 | <img src="examples/endo/sample_4.gif" width=""> | <img src="example/uls/sample_6.gif" width=""> | <img src="example/mri/sample_2.gif" width=""> | <img src="example/cell/sample_4.gif" width=""> |
 | <img src="examples/endo/sample_6.gif" width=""> | <img src="example/uls/sample_8.gif" width=""> | <img src="example/mri/sample_3.gif" width=""> | <img src="example/cell/sample_7.gif" width=""> |
