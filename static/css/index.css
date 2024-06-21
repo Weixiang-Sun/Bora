@@ -94,6 +94,7 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  width: 100%;
 }
 
 .results-carousel .item {

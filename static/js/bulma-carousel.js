@@ -2335,8 +2335,12 @@ var defaultOptions = {
     slidesToScroll: 2
   }, {
     changePoint: 768,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToShow: 4,
+    slidesToScroll: 4
+  }, {
+    changePoint: 1024, // 新增的断点
+    slidesToShow: 4,   // 在更宽的屏幕上显示4个项目
+    slidesToScroll: 4  // 每次滚动4个项目
   }],
 
   onReady: null,
