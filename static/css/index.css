@@ -93,7 +93,7 @@ body {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%;
+    padding-bottom: 100%;
 
     overflow: hidden;
     border-radius: 10px !important;
@@ -115,23 +115,16 @@ body {
 }
 
 .results-carousel .item {
-  position: relative; /* 添加定位，便于视频绝对定位 */
-  width: 100%; /* 容器宽度100% */
-  padding-top: 100%; /* padding-top为容器宽度的100%，确保为正方形 */
-  overflow: hidden;
   margin: 5px;
+  overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
+  padding: 0;
   font-size: 0;
 }
 
 .results-carousel video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 覆盖整个容器，多余部分会被剪切 */
+  margin: 0;
 }
 
 
