@@ -2,7 +2,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -17,7 +16,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -27,21 +25,20 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
 .publication-title {
 }
 
 .publication-banner {
-  max-height: parent;
-
+  width: 100%; /* Ensures banner uses the full width */
+  height: auto; /* Maintains aspect ratio */
+  overflow: hidden; /* Hides any excess */
 }
 
 .publication-banner video {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height to maintain aspect ratio */
   position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
-  object-fit: fit;
+  object-fit: cover; /* Covers the entire space without stretching */
 }
 
 .publication-header .hero-body {
@@ -67,9 +64,6 @@ body {
     font-weight: bolder;
 }
 
-.publication-authors {
-}
-
 .publication-authors a {
    color: hsl(204, 86%, 53%) !important;
 }
@@ -82,19 +76,10 @@ body {
   display: inline-block;
 }
 
-.publication-banner img {
-}
-
-.publication-authors {
-  /*color: #4286f4;*/
-}
-
 .publication-video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height automatically */
     position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-
     overflow: hidden;
     border-radius: 10px !important;
 }
@@ -107,15 +92,14 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
 
 .results-carousel .item {
   margin: 5px;
+  width: 100%; /* Each item takes full width of its container */
+  height: auto; /* Height adjusted automatically */
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -124,9 +108,10 @@ body {
 }
 
 .results-carousel video {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height automatically */
   margin: 0;
 }
-
 
 .interpolation-panel {
   background: #f5f5f5;
@@ -134,7 +119,7 @@ body {
 }
 
 .interpolation-panel .interpolation-image {
-  width: 100%;
+  width: 100%; /* Full width of the container */
   border-radius: 5px;
 }
 
@@ -145,13 +130,12 @@ body {
   margin: 0 !important;
 }
 
-.interpolation-panel .slider {
-  margin: 0 !important;
+#interpolation-image-wrapper {
+  width: 100%; /* Full width of the container */
 }
 
-#interpolation-image-wrapper {
-  width: 100%;
-}
 #interpolation-image-wrapper img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height automatically */
   border-radius: 5px;
 }
