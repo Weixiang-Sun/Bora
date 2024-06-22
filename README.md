@@ -81,8 +81,11 @@ colossalai run --nproc_per_node 8 --hostfile hostfile scripts/train_origin.py co
 
 ## Acknowledgement
 We are greatful for the following works and generous contribution to open source.
+
 [Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All
+
 [LLaVA](https://github.com/haotian-liu/LLaVA): Large Language and Vision Assistant
+
 [Apex](https://github.com/NVIDIA/apex): A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
 
 
