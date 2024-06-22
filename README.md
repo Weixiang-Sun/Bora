@@ -17,6 +17,51 @@
 | <img src="examples/endo/sample_4.gif" width=""> | <img src="examples/uls/sample_6.gif" width=""> | <img src="examples/mri/sample_2.gif" width=""> | <img src="examples/cell/sample_4.gif" width=""> |
 | <img src="examples/endo/sample_6.gif" width=""> | <img src="examples/uls/sample_8.gif" width=""> | <img src="examples/mri/sample_3.gif" width=""> | <img src="examples/cell/sample_7.gif" width=""> |
 
+## Contents
+- [Installation](#installation)
+- [Prepare](#prepare)
+- [Inference](#inference)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Contribution](#contribution)
+- [Citation](#citation)
+- [Acknowledgement](#acknowledgement)
+
+## Installation
+```bash
+# create a virtual env
+conda create -n bora python=3.10
+# activate virtual environment
+conda activate bora
+# install torch
+# We recommend torch==2.2.2 under CUDA12.1
+pip install torch torchvision
+
+# install flash attention
+pip install packaging ninja
+pip install flash-attn --no-build-isolation
+
+# install apex
+# We recommend install from source
+git clone https://github.com/NVIDIA/apex.git
+cd apex
+pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
+
+# install xformers
+pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
+
+# install opensora
+pip install -v .
+```
+
+## Prepare
+Before running, besides Bora's weights, you also need to download the weights for the VAE and Text Encoder. We have provided all the links in the table below:
+|Bora|Video Encoder|Text Encoder|
+|----|----|----|
+|[Bora](https://huggingface.co/Sweson/Bora)|[VAE](https://huggingface.co/stabilityai/sd-vae-ft-ema)|(T5)[https://huggingface.co/DeepFloyd/t5-v1_1-xxl]|
+
+## Inference
+
 
 ## Star History
 
