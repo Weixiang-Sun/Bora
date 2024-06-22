@@ -22,8 +22,6 @@
 - [Prepare](#prepare)
 - [Inference](#inference)
 - [Training](#training)
-- [Evaluation](#evaluation)
-- [Contribution](#contribution)
 - [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
 
@@ -58,9 +56,35 @@ pip install -v .
 Before running, besides Bora's weights, you also need to download the weights for the VAE and Text Encoder. We have provided all the links in the table below:
 |Bora|Video Encoder|Text Encoder|
 |----|----|----|
-|[Bora](https://huggingface.co/Sweson/Bora)|[VAE](https://huggingface.co/stabilityai/sd-vae-ft-ema)|(T5)[https://huggingface.co/DeepFloyd/t5-v1_1-xxl]|
+|[Bora](https://huggingface.co/Sweson/Bora)|[VAE](https://huggingface.co/stabilityai/sd-vae-ft-ema)|[T5](https://huggingface.co/DeepFloyd/t5-v1_1-xxl)|
 
 ## Inference
+```bash
+# on single card
+torchrun --standalone --nproc_per_node 1 scripts/inference.py configs/infer.py --ckpt-path Bora_CKPT
+
+# on multi cards
+torchrun --standalone --nproc_per_node N scripts/inference.py configs/infer.py --ckpt-path Bora_CKPT
+```
+
+## Train
+```bash
+# on four cards
+torchrun --nnodes=1 --nproc_per_node=4 scripts/train_origin.py configs/train.py --data-path CSV_PATH --ckpt-path Bora_CKPT
+```
+To launch training on multiple nodes, prepare a hostfile according
+to [ColossalAI](https://colossalai.org/docs/basics/launch_colossalai/#launch-with-colossal-ai-cli), and run the
+following commands.
+```bash
+colossalai run --nproc_per_node 8 --hostfile hostfile scripts/train_origin.py configs/train.py --data-path CSV_PATH --ckpt-path Bora_CKPT
+```
+
+## Acknowledgement
+We are greatful for the following works and generous contribution to open source.
+[Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All
+[LLaVA](https://github.com/haotian-liu/LLaVA): Large Language and Vision Assistant
+[Apex](https://github.com/NVIDIA/apex): A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
+
 
 
 ## Star History
