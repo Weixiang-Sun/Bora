@@ -1,4 +1,5 @@
 <img src="./assets/logo2.png" style="height:7em;vertical-align: middle" alt="Logo"/>
+
 # Bora: Biomedical Generalist Video Generation Model
 <div align="center">
     <a href="https://github.com/Weixiang-Sun/Bora/stargazers"><img src="https://img.shields.io/github/stars/Weixiang-Sun/Bora?style=social"></a>
