@@ -1,4 +1,6 @@
-<img src="./assets/logo2.png" style="height:7em;vertical-align: middle" alt="Logo"/>
+<div align="center">
+    <img src="./assets/logo2.png" style="height:7em;vertical-align: middle" alt="Logo"/>
+</div>
 
 # Bora: Biomedical Generalist Video Generation Model
 <div align="center">
