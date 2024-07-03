@@ -6,13 +6,14 @@
 
 [Weixiang Sun](https://weixiang-sun.github.io/)<sup>1*</sup>, [Xiaocao You](https://xiaocao.me/)<sup>2*</sup>, [Ruizhe Zheng](https://jonbarron.info)<sup>3*</sup>, [Zhengqing Yuan](https://dlyuangod.github.io/zhengqingyuan/)<sup>4</sup>, [Xiang Li](https://xiangli-shaun.github.io/)<sup>5</sup>, [Lifang He](https://engineering.lehigh.edu/faculty/lifang-he)<sup>6</sup>, [Quanzheng Li](https://researchers.mgh.harvard.edu/profile/4211743/Quanzheng-Li)<sup>5</sup>, [Lichao Sun](https://lichao-sun.github.io/)<sup>6</sup>
 
-<sup>1*</sup>Northeastern University, <sup>2</sup>Shanghai University of Finance and Economics, <sup>3</sup>Fudan University, <sup>4</sup>Notre Dame University, <sup>5</sup>Massachusetts General Hospital and Harvard Medical School, <sup>6</sup>Lehigh University
+<sup>1</sup>Northeastern University, <sup>2</sup>Shanghai University of Finance and Economics, <sup>3</sup>Fudan University, <sup>4</sup>Notre Dame University, <sup>5</sup>Massachusetts General Hospital and Harvard Medical School, <sup>6</sup>Lehigh University
 
 
 <div align="center">
     <a href="https://github.com/Weixiang-Sun/Bora/stargazers"><img src="https://img.shields.io/github/stars/Weixiang-Sun/Bora?style=social"></a>
+    <a href="https://weixiang-sun.github.io/Bora/"><img src="https://img.shields.io/badge/Website-Page-blue"></a>
     <a href="https://weixiang-sun.github.io/Bora/"><img src="https://img.shields.io/badge/Gallery-View-orange?logo=&amp"></a>
-    <a href="https://huggingface.co/Sweson/Bora"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue"></a>
+    <a href="https://huggingface.co/Sweson/Bora"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-Green"></a>
 </div>
 
 
