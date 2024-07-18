@@ -37,6 +37,7 @@
 - [Training](#training)
 - [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
+- [Star History](#star-history)
 
 ## Installation
 ```bash
@@ -92,15 +93,7 @@ following commands.
 colossalai run --nproc_per_node 8 --hostfile hostfile scripts/train_origin.py configs/train.py --data-path CSV_PATH --ckpt-path Bora_CKPT
 ```
 
-## Acknowledgement
-We are greatful for the following works and generous contribution to open source.
-
-[Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All
-
-[LLaVA](https://github.com/haotian-liu/LLaVA): Large Language and Vision Assistant
-
-[Apex](https://github.com/NVIDIA/apex): A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
-
+## Citation
 If you're using Bora in your research or applications, please cite using this BibTeX:
 ```bibtex
 @article{sun2024bora,
@@ -110,6 +103,17 @@ If you're using Bora in your research or applications, please cite using this Bi
   year={2024}
 }
 ```
+
+
+## Acknowledgement
+We are greatful for the following works and generous contribution to open source.
+
+[Open-Sora](https://github.com/hpcaitech/Open-Sora): Democratizing Efficient Video Production for All
+
+[LLaVA](https://github.com/haotian-liu/LLaVA): Large Language and Vision Assistant
+
+[Apex](https://github.com/NVIDIA/apex): A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
+
 
 
 ## Star History
