@@ -101,6 +101,15 @@ We are greatful for the following works and generous contribution to open source
 
 [Apex](https://github.com/NVIDIA/apex): A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
 
+If you're using Bora in your research or applications, please cite using this BibTeX:
+```bibtex
+@article{sun2024bora,
+  title={Bora: Biomedical Generalist Video Generation Model},
+  author={Sun, Weixiang and You, Xiaocao and Zheng, Ruizhe and Yuan, Zhengqing and Li, Xiang and He, Lifang and Li, Quanzheng and Sun, Lichao},
+  journal={arXiv preprint arXiv:2407.08944},
+  year={2024}
+}
+```
 
 
 ## Star History
