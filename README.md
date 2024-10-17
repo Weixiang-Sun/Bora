@@ -117,4 +117,11 @@ We are greatful for the following works and generous contribution to open source
 
 
 ## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=Weixiang-Sun/Bora&type=Date)](https://star-history.com/#Weixiang-Sun/Bora&Date)
+
+<a href="https://star-history.com/#Weixiang-Sun/Bora&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Weixiang-Sun/Bora&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Weixiang-Sun/Bora&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Weixiang-Sun/Bora&type=Date" />
+ </picture>
+</a>
